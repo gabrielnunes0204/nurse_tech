@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background: #0716E0;
+    color: #fff;
+}
+
+.header .title {
+    cursor: pointer;
+}
+
+.itens {
+    display: flex;
+}
+
+.item {
+    list-style: none;
+    margin: 0 0.5rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}

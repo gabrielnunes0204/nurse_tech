@@ -1,0 +1,43 @@
+.container {
+    background: #444;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centro_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.centro_container img {
+    width: 30%;
+    background: #333;
+    border-radius: 100%;
+}
+
+.icones_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.icones_container img {
+    width: 2rem;
+    background: #fff;
+    border-radius: 100%;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.icones_container #icone_telefone {
+    background: tomato;
+}

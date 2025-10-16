@@ -1,0 +1,54 @@
+<div class="main-wrapper">
+    <app-cabecalho [showBack]="false"></app-cabecalho>
+
+    <div class="container">
+        <section class="pillars">
+            <div>
+                <h2> Missão </h2>
+                <p>
+                    Promover o cuidado integral à saúde por meio da assistência de enfermagem humanizada, ética e baseada em
+                    evidências, respeitando a dignidade, os direitos e as
+                    necessidades individuais de cada paciente.
+                </p>
+            </div>
+            
+            <div>
+                <h2> Visão </h2>
+                <p>
+                    Ser referência em excelência no cuidado de enfermagem, reconhecida pela
+                    qualidade técnica, empatia no atendimento e contribuição ativa para a
+                    transformação positiva da saúde na comunidade.
+                </p>
+            </div>
+
+            <div>
+                <h2> Valores </h2>
+                <p>
+                    Tratar cada paciente com respeito, acolhimento e empatia.
+                    Atuar com integridade, responsabilidade e compromisso.
+                    Buscar continuamente o aprimoramento técnico e científico.
+                    Respeito à diversidade e atendendimento com sensibilidade.
+                </p>
+            </div>
+        </section>
+
+        <section class="services">
+            <h2> Serviços </h2>
+            <div class="services_container">
+                <div>
+                    <button [routerLink]="'/teleconsulta'"> Teleconsulta </button>
+                </div>
+        
+                <div>
+                    <button [routerLink]="'/monitoramento'"> Monitoramento de diabetes (doenças pré-existentes) </button>
+                </div>
+        
+                <div>
+                    <button [routerLink]="'/consulta_enfermidade'"> Informativo sobre enfermidades </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <app-rodape></app-rodape>
+</div>

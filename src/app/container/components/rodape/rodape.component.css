@@ -1,0 +1,23 @@
+.footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    background: #0716E0;
+    color: #fff;
+    bottom: 0rem;
+    position: relative;
+}
+
+.footer .descritivo {
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+}
+
+.footer .info-container {
+    width: 30%;
+    padding: 1.5rem;
+}
+
+.footer .links {
+    cursor: pointer;
+}

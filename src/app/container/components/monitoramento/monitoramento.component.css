@@ -1,0 +1,109 @@
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.refeicao_container {
+    padding: 1rem 1.5rem;
+}
+
+.refeicao_container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.refeicao_container select {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.valor_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0rem 1.5rem;
+    gap: 1rem;
+}
+
+.valor_container div {
+    width: 100%;
+}
+
+.valor_container label {
+    display: block;
+    margin: 1rem 0 0.5rem 0;
+    font-weight: bold;
+}
+
+.valor_container input {
+    padding: 0.5rem;
+    width: 100%;
+    outline: none;
+}
+
+.inserir_container {
+    padding: 1rem 0;
+    margin: 0 1.5rem;
+}
+
+.inserir_container button {
+    border: none;
+    border-radius: 2rem;
+    background: #0716E0;
+    color: #fff;
+    font-weight: bold;
+    padding: 1rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.resultado_container {
+    padding: 1rem 1.5rem;
+}
+
+.resultado_container p {
+    margin: 0.5rem 0;
+}
+
+.resultado_container #botao1,
+.resultado_container #botao2 {
+    border: none;
+    border-radius: 2rem;
+    background: #0716E0;
+    color: #fff;
+    font-weight: bold;
+    padding: 1rem;
+    width: 40%;
+    cursor: pointer;
+}
+
+.resultado_container #botao1 {
+    margin-right: 0.5rem;
+}
+
+.paginacao {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.paginacao button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 2rem;
+    background: #0192E1;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}

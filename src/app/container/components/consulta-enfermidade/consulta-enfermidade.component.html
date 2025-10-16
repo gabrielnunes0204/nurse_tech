@@ -1,0 +1,21 @@
+<div class="main-wrapper">
+    <app-cabecalho [showBack]="true"></app-cabecalho>
+
+    <div class="container">
+        <div class="pesquisa_container">
+            <label for="nome_enfermidade"> Informe a enfermidade: </label>
+            <div>
+                <input type="text" id="nome_enfermidade" name="nome_enfermidade" placeholder="Ex: dor de cabeça, enjoo, febre, tosse, dor abdominal" [(ngModel)]="enfermidade">
+                <button (click)="pesquisar()"> Pesquisar </button>
+            </div>
+        </div>
+    
+        <div class="resultado" *ngIf="resultado && enfermidade">
+            <p>
+                <strong> Resultado: </strong> {{ resultado }}
+            </p>
+        </div>  
+    </div>
+    
+    <app-rodape></app-rodape>
+</div>

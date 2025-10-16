@@ -1,0 +1,62 @@
+<div class="main-wrapper">
+    <app-cabecalho [showBack]="true"></app-cabecalho>
+
+    <div class="container">
+        <div class="content-container">
+            <div class="refeicao_container">
+                <label for="refeicao"> Informe o tipo de refeição: </label>
+                <select id="refeicao" name="refeicao" (change)="habilitaValores()" [(ngModel)]="refeicao">
+                    <option> Café </option>
+                    <option> Almoço </option>
+                    <option> Janta </option>
+                </select>
+            </div>
+        
+            <div class="valor_container" *ngIf="exibeCamposValoresBotao">
+                <div>
+                    <label for="antes"> Valor da glicemia antes do {{refeicao}}: </label>
+                    <input type="number" id="antes" name="antes" placeholder="Ex: 120" (change)="habilitaBotao()" [(ngModel)]="valorRefeicaoAntes">
+                </div>
+        
+                <div>
+                    <label for="depois"> Valor da glicemia depois do {{refeicao}}: </label>
+                    <input type="number" id="depois" name="depois" placeholder="Ex: 95" (change)="habilitaBotao()" [(ngModel)]="valorRefeicaoDepois">
+                </div>
+            </div>
+        
+            <div class="inserir_container" *ngIf="exibeCamposValoresBotao">
+                <button
+                    [ngStyle]="{ 'background': habilitaBotaoInsercao ? '#0716E0' : '#ababab94' }"
+                    [disabled]="!habilitaBotaoInsercao"
+                    (click)="inserir()"> 
+                    Inserir
+                </button>
+            </div>
+        </div>
+    
+        <div class="resultado_container" *ngIf="exibeResultado && itemAtual">
+            <h2> Resultados: </h2>
+            <p> <strong> Data:</strong> {{ itemAtual.data }}</p>
+            <p> <strong> Valor glicemia antes do {{ refeicao }}:</strong> {{ itemAtual.valorAntes }}</p>
+            <p> <strong> Valor glicemia depois do {{ refeicao }}:</strong> {{ itemAtual.valorDepois }}</p>
+          
+            <div class="paginacao">
+                <button 
+                    (click)="paginaAnterior()"
+                    [ngStyle]="{ 'background': listaValoresGlicemia.length > 1 ? '#0192E1' : '#ababab94' }"
+                    [disabled]="paginaAtual === 0">
+                    Anterior
+                </button>
+                <span> Página {{ paginaAtual + 1 }} de {{ totalPaginas }} </span>
+                <button
+                    (click)="proximaPagina()"
+                    [ngStyle]="{ 'background': listaValoresGlicemia.length > 1 ? '#0192E1' : '#ababab94' }"
+                    [disabled]="paginaAtual >= totalPaginas - 1">
+                    Próxima
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <app-rodape></app-rodape>
+</div>

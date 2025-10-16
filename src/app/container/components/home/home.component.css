@@ -1,0 +1,55 @@
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+.container .pillars {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+}
+
+.container .pillars div {
+    width: 30%;
+    text-align: justify;
+}
+
+.container .pillars p {
+    font-size: 0.75rem;
+}
+
+.container .services {
+    text-align: center;
+}
+
+.container .services_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container .services_container div {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    width: 30%;
+}
+
+.container .services_container button {
+    border: none;
+    padding: 1rem;
+    border-radius: 2rem;
+    background: #0716E0;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}
+
+.container .services_container button:hover {
+    background: #557CE0;
+}
