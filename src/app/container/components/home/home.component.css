@@ -53,3 +53,20 @@
 .container .services_container button:hover {
     background: #557CE0;
 }
+
+@media (max-width: 550px) {
+    .container .pillars,
+    .container .services_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .pillars div {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .container .services_container div {
+        width: 80%;
+    }
+}

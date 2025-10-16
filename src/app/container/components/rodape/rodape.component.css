@@ -21,3 +21,14 @@
 .footer .links {
     cursor: pointer;
 }
+
+@media (max-width: 550px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer .info-container {
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
